@@ -27,12 +27,13 @@ export class FaceSnapComponent  {
 
   onSnap() {
     if(this.buttonText === 'oh Snap'){
-      this.snaps++;
+      this.faceSnap.snaps++;
       this.buttonText = 'Oops, unSnap!';
     }else{
-      this.snaps--;
+      this.faceSnap.snaps--;
       this.buttonText = 'oh Snap';
     }
  
   }
 }
+
