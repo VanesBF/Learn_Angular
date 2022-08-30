@@ -11,6 +11,7 @@ export class FaceSnapComponent  {
   createdDate!: Date;
   snaps!: number;
   imageUrl!: string;
+  buttonText!: string;
 
   ngOnInit(){
    this.tittle = 'Vanessa';
@@ -18,5 +19,17 @@ export class FaceSnapComponent  {
    this.createdDate = new Date();
    this.snaps = 6;
    this.imageUrl = 'https://media.routard.com/image/90/8/photo.1457908.jpg'
+   this.buttonText = 'oh Snap';
+  }
+
+  onSnap() {
+    if(this.buttonText === 'oh Snap'){
+      this.snaps++;
+      this.buttonText = 'Oops, unSnap!';
+    }else{
+      this.snaps--;
+      this.buttonText = 'oh Snap';
+    }
+ 
   }
 }
