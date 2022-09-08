@@ -8,20 +8,9 @@ import { FaceSnap } from '../models/face-snap.model';
 })
 export class FaceSnapComponent  {
   @Input() faceSnap!: FaceSnap;
-
-  tittle!: string;
-  description!: string;
-  createdDate!: Date;
-  snaps!: number;
-  imageUrl!: string;
   buttonText!: string;
 
   ngOnInit(){
-   this.tittle = 'Vanessa';
-   this.description = 'Mon amie depuis toute petite!'; 
-   this.createdDate = new Date();
-   this.snaps = 6;
-   this.imageUrl = 'https://media.routard.com/image/90/8/photo.1457908.jpg'
    this.buttonText = 'oh Snap';
   }
 
